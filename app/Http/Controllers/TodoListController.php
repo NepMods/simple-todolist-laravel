@@ -60,7 +60,14 @@ class TodoListController extends Controller
     {
         $item = $this->getItem($req->id);
         $item->is_done = true;
-        return $item->save();
+        if($item->save()) {
+            return redirect("/");
+        } else {
+            return response().json([
+                "success"=>false, 
+                "message"=>"Database Error",
+            ]);
+        }
     }
     public function editItem($id)
     {
