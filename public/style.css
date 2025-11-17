@@ -50,7 +50,7 @@ tbody tr.done {
     text-decoration: line-through;
 }
 tbody tr.done a {
-    text-decoration: none !important;    
+    text-decoration: none !important;
 }
 tbody tr td {
     flex: 1;
@@ -83,4 +83,54 @@ tbody tr td:nth-child(3) {
     font-size: 0.85rem;
     font-weight: bold;
     color: #2e3e2c;
+}
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    input, textarea, button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    tbody tr {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    tbody tr td {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    tbody tr td:last-child {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    tbody tr a, tbody tr button {
+        font-size: 0.85rem;
+        padding: 8px 10px;
+    }
 }
