@@ -23,7 +23,7 @@
             </div>
             <br>
             <div>
-                <label for="body">Body:</label>
+                <label for="body" style="display: inline-block">Body:</label>
                 <textarea type="text" name="body" style="height: 100px; width: 200px;"></textarea>
             </div>
             <br>
