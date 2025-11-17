@@ -24,7 +24,7 @@
             </div>
             <br>
             <div>
-                <label for="body">Body:</label>
+                 <label for="body" style="display: block; margin-bottom: 3px;">Body:</label>
                 <textarea type="text" name="body" style="height: 100px; width: 200px;">{{ $data->body }}</textarea>
             </div>
             <br>
