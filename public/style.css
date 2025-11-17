@@ -18,9 +18,11 @@ input, textarea, button {
     color: #718355;
     background-color: #cfe1b9;
     padding: 30px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     display: block;
-    margin: 10px;
+    margin: 10px auto;
+    box-sizing: border-box;
 }
 table {
     width: 100%;
@@ -84,7 +86,6 @@ tbody tr td:nth-child(3) {
     font-weight: bold;
     color: #2e3e2c;
 }
-/* Mobile Responsive */
 @media (max-width: 600px) {
 
     body {
