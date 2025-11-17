@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?o=9999">
     <title>Document</title>
 </head>
 
@@ -45,19 +45,19 @@
                                     <form action="{{ route("finish") }}" method="post">
                                         @csrf
                                         <input type="hidden" name="id" value="{{ $item['id'] }}">
-                                        <button>Finish</a>
+                                        <button>Finish</button>
                                     </form>
                                 @endif
 
 
                                 <form action="{{ route("edit", $item['id'] ) }}" method="get">
-                                    <button>Edit</a>
+                                    <button>Edit</button>
                                 </form>
 
                                 <form action="{{ route("delete") }}" method="post">
                                     @csrf
                                     <input type="hidden" name="id" value="{{ $item['id'] }}">
-                                    <button>Delete</a>
+                                    <button>Delete</button>
                                 </form>
                             </td>
                         </tr>

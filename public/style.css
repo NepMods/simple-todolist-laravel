@@ -86,7 +86,8 @@ tbody tr td:nth-child(3) {
     font-weight: bold;
     color: #2e3e2c;
 }
-@media (max-width: 600px) {
+
+@media screen and (max-width: 600px) {
 
     body {
         padding: 10px;
